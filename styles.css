@@ -1,0 +1,200 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #20232a;
+    color: #ffffff;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #2e3237;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 0;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the about section */
+.about {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* Style the portfolio section */
+.portfolio {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #2e3237;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 0 1rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border: 2px solid #61dafb;
+}
+
+.portfolio-item h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+/* Style the contact section */
+.contact {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact a.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #61dafb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact a.btn:hover {
+    background-color: #0074b8;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #2e3237;
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+    }
+}
+/* Style the profiles section */
+.profiles {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #2e3237;
+    color: #ffffff;
+}
+
+.profiles h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.profile {
+    margin: 0 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 100%;
+    border: 2px solid #61dafb;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    color: #61dafb;
+}
