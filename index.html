@@ -1,77 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Minimalism Web Design</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg  sticky-top">
+      <div class="container-fluid  headers">
+        <a class="navbar-brand" href="#"><img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPJsONh8XZIKCZoZmmdTf-_4L2eL2_beqVX9kwEeT7Qziv9d2awQ_9YXq0O84HZtQU7o&usqp=CAU" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <video autoplay loop muted src="space.mp4"></video>
+    <div class="hero">
+<h1>Welcome to Space Explore!</h1>
+<p>Planets are celestial bodies that orbit stars, including our Sun, and are an integral part of our solar system. They come in various sizes, compositions, and characteristics. In our solar system, there are two main categories of planets: terrestrial planets and gas giants.</p>
+    </div>
+   
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="https://png.pngtree.com/thumb_back/fh260/background/20220216/pngtree-3d-earth-animation-image_932074.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Earth</h5>
+            <p>Size: Earth is the third-largest planet in the solar system, with a diameter of approximately 12,742 kilometers (7,918 miles).
+              Atmosphere: Earth's atmosphere is primarily composed of nitrogen and oxygen, creating the conditions suitable for life.
+              Unique Features: Earth is the only planet known to support life, with a diverse range of ecosystems, liquid water, and a protective magnetic field.
+              Varied Geography: It boasts diverse landforms, including mountains, oceans, deserts, and forests.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://media.sketchfab.com/models/17a9a3e84f1d4e82aba7981fea7deed0/thumbnails/3bda64ad6ce043c4a2b6d373df5a21c3/f4a555f3e19341de91ed5984bed7c826.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mercury</h5>
+            <p>Size: Mercury is the smallest of the terrestrial planets, with a diameter of about 4,880 kilometers (3,032 miles).
+              Surface: Its surface is heavily cratered, resembling the Moon, and is covered in plains, scarps (cliffs), and impact basins.
+              Atmosphere: Mercury has a very thin and tenuous exosphere, essentially lacking a substantial atmosphere.
+              Temperature Extremes: Due to its lack of atmosphere, Mercury experiences extreme temperature variations. Daytime temperatures can soar to around 430 degrees Celsius (800 degrees Fahrenheit), while nighttime temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://img.freepik.com/premium-photo/planet-venus-spinning-and-sun-rise-front-view-of-venus-planet-from-space-full-3d-view-of-venus-4k-resolution_824086-1336.jpg?w=360" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Venus</h5>
+            <p>Size: Venus is similar in size to Earth, with a diameter of about 12,104 kilometers (7,521 miles).
+              Atmosphere: Venus has a thick atmosphere primarily composed of carbon dioxide, with clouds of sulfuric acid. This atmosphere leads to a runaway greenhouse effect, trapping heat and making it the hottest planet in the solar system.
+              Surface: Venus has a rocky surface marred by numerous volcanoes, mountains, and impact craters.
+              Runaway Greenhouse Effect: Venus's surface temperature exceeds 470 degrees Celsius (880 degrees Fahrenheit), making it hotter than Mercury despite being farther from the Sun.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Futuristic Minimalism</h1>
-            <p>Experience the future of web design.</p>
-            <a href="#portfolio" class="btn">View Portfolio</a>
-        </div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>We are a team of visionary web designers who believe in the power of simplicity and cutting-edge technology. Our mission is to create stunning websites that are both functional and aesthetically pleasing.</p>
-        </div>
-    </section>
+    <div class="card text-center">
+      <div class="card-header">
+        Planets
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Earth</h5>
+        <p class="card-text">Size: Earth is the third-largest planet in the solar system, with a diameter of approximately 12,742 kilometers (7,918 miles). Atmosphere: Earth's atmosphere is primarily composed of nitrogen and oxygen, creating the conditions suitable for life. Unique Features: Earth is the only planet known to support life, with a diverse range of ecosystems, liquid water, and a protective magnetic field. Varied Geography: It boasts diverse landforms, including mountains, oceans, deserts, and forests.</p>
+        <a href="#" class="btn btn-secondary  hee">Explore</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mercury</h5>
+        <p class="card-text">Size: Mercury is the smallest of the terrestrial planets, with a diameter of about 4,880 kilometers (3,032 miles). Surface: Its surface is heavily cratered, resembling the Moon, and is covered in plains, scarps (cliffs), and impact basins. Atmosphere: Mercury has a very thin and tenuous exosphere, essentially lacking a substantial atmosphere. Temperature Extremes: Due to its lack of atmosphere, Mercury experiences extreme temperature variations. Daytime temperatures can soar to around 430 degrees Celsius (800 degrees Fahrenheit), while nighttime temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mars:</h5>
+        <p class="card-text">Size: Mercury is the smallest of the terrestrial planets, with a diameter of about 4,880 kilometers (3,032 miles). Surface: Its surface is heavily cratered, resembling the Moon, and is covered in plains, scarps (cliffs), and impact basins. Atmosphere: Mercury has a very thin and tenuous exosphere, essentially lacking a substantial atmosphere. Temperature Extremes: Due to its lack of atmosphere, Mercury experiences extreme temperature variations. Daytime temperatures can soar to around 430 degrees Celsius (800 degrees Fahrenheit), while nighttime temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mercury</h5>
+        <p class="card-text">Size: Mercury is the smallest of the terrestrial planets, with a diameter of about 4,880 kilometers (3,032 miles). Surface: Its surface is heavily cratered, resembling the Moon, and is covered in plains, scarps (cliffs), and impact basins. Atmosphere: Mercury has a very thin and tenuous exosphere, essentially lacking a substantial atmosphere. Temperature Extremes: Due to its lack of atmosphere, Mercury experiences extreme temperature variations. Daytime temperatures can soar to around 430 degrees Celsius (800 degrees Fahrenheit), while nighttime temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mercury</h5>
+        <p class="card-text">Size: Mercury is the smallest of the terrestrial planets, with a diameter of about 4,880 kilometers (3,032 miles). Surface: Its surface is heavily cratered, resembling the Moon, and is covered in plains, scarps (cliffs), and impact basins. Atmosphere: Mercury has a very thin and tenuous exosphere, essentially lacking a substantial atmosphere. Temperature Extremes: Due to its lack of atmosphere, Mercury experiences extreme temperature variations. Daytime temperatures can soar to around 430 degrees Celsius (800 degrees Fahrenheit), while nighttime temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-body-secondary">
+      </div>
+    </div>
+  <footer>
+      <p>&copy; 2023 Futuristic Minimalism. All rights reserved.</p>
+  </footer>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-            </div>
-        </div>
-    </section>
-    <section id="profiles" class="profiles">
-        <h2>Our Team</h2>
-        <div class="profile">
-            <img src="Profile 1.png" alt="Profile 1" height="100px">
-            <h3>Prince Kumar</h3>
-            <p>Front-End Developer</p>
-        </div>
-        <div class="profile">
-            <img src="Profile 2.png" alt="Profile 2" height="100px">
-            <h3>Rishab Besoya</h3>
-            <p>UI/UX Designer</p>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to work with us, please get in touch.</p>
-        <a href="mailto:info@futuristicminimalism.com" class="btn">Email Us</a>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Futuristic Minimalism. All rights reserved.</p>
-    </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+    
+
